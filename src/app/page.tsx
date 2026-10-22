@@ -145,7 +145,7 @@ export default function Home() {
       <section id="estrada" className="secao secao--estrada" aria-labelledby="estrada-titulo">
         <div className="conteudo estrada">
           <div className="estrada__lado">
-            <Cabeca id="estrada-titulo" sobre="A estrada" titulo={<>De Manaus, da igreja<br /><em>e das festas de família.</em></>} />
+            <Cabeca id="estrada-titulo" sobre="A estrada" titulo={<>Das festas de família<br /><em>pro palco da estrada.</em></>} />
             <div className="estrada__retrato">
               <Image src="/fotos/estudio-chapeu.webp" alt="Lukas Santos de chapéu branco e jaqueta de couro" width={854} height={1280} sizes="(min-width: 900px) 34vw, 80vw" />
             </div>

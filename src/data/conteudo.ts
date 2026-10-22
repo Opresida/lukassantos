@@ -18,7 +18,7 @@ export const NUMEROS = [
 export type Marco = { quando: string; texto: string };
 export const ESTRADA: Marco[] = [
   { quando: '1987', texto: 'Elizeu dos Santos Oliveira nasce em Manaus, no dia 6 de março.' },
-  { quando: 'Aos 20', texto: 'Começa a cantar na igreja, em aniversários e nas festas da família.' },
+  { quando: 'Aos 20', texto: 'Começa a soltar a voz nos aniversários e nas festas da família.' },
   { quando: 'Aos 24', texto: 'Forma com um amigo a dupla Lukas & David. A dupla dura pouco e ele segue carreira solo, embalado pelo sertanejo.' },
   { quando: '2014', texto: 'Vira a Sensação do sertanejo universitário em Manaus e leva o show a Presidente Figueiredo, Manacapuru, Rio Preto da Eva, Beruri, Lábrea, Humaitá, Novo Airão, Itacoatiara, Fonte Boa, Coari e Tefé.' },
   { quando: '2015–2016', texto: 'Abre horizontes fora do Amazonas: Rondônia, Fortaleza, Goiânia e Rio de Janeiro.' },
