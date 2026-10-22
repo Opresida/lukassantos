@@ -8,4 +8,4 @@
 - Visual: só a identidade do mídia kit do Lukas (tokens no topo de `src/app/globals.css`). Nada do visual da BrandSquad, Royals, O.C.U.L.T.O ou Baile das Bruxas.
 - Logo e fotos saem de `pnpm midia` (`scripts/preparar-midia.py`); `src/components/marca/logo.ts` é gerado, não editar à mão.
 - Conferência visual: Playwright em 360, 390, 430, 768, 1024, 1280 e 1440 px. O navegador do Playwright guarda zoom de 80% para `127.0.0.1` (e 75% para `localhost`): usar **http://127.0.0.2:3600** num contexto novo (`browser.newContext`) para medir e clicar sem zoom.
-- Publicação só com o ok do Humberto.
+- Publicar = commit + push na `main` (GitHub `Opresida/lukassantos` → Vercel publica sozinha), só com o ok do Humberto.

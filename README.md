@@ -25,4 +25,4 @@ Lê o material do cliente em `D:\CLIENTES BRANDSQUADS\Lukas Santos` e gera:
 Topo → Ao vivo (4 covers) → números → Formatos → Onde já tocou → A estrada (linha do tempo + lançamento) → Banda → Fotos (galeria, imprensa, rider) → Contratar (formulário → WhatsApp) → Rodapé.
 
 ## Estado
-Construído em 22/10/2026. Ainda **não publicado** (sem repositório remoto e sem projeto na Vercel). Endereço em `src/lib/site.ts` (`SITE_URL` ou `NEXT_PUBLIC_SITE_URL`).
+No ar desde 22/10/2026: **https://lukassantos.vercel.app**. Código em GitHub `Opresida/lukassantos` (branch `main`); projeto Vercel `opresidas-projects/lukassantos`, conectado ao GitHub: todo push na `main` publica sozinho. Endereço oficial em `src/lib/site.ts` (`SITE_URL`, ou a variável `NEXT_PUBLIC_SITE_URL` quando houver domínio próprio).
