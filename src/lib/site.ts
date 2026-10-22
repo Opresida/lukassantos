@@ -1,5 +1,6 @@
 export const NOME = 'Lukas Santos';
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://lukassantos.vercel.app';
+// Domínio oficial (registrado em 22/10/2026, DNS na HostGator). lukassantos.com redireciona (308) para o www na Vercel.
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.lukassantos.com';
 export const DESCRICAO =
   'Lukas Santos, cantor de sertanejo universitário e forronejo de Manaus. Shows com banda completa, acústico e voz e violão para casas de show, festas, casamentos e eventos no Amazonas.';
 
