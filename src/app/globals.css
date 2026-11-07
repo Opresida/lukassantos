@@ -292,7 +292,7 @@ html.abertura-saindo .abertura { clip-path: inset(0 0 100% 0); }
 .topo__veu {
   position: absolute; inset: 0; z-index: -1;
   background:
-    linear-gradient(180deg, rgb(11 11 12 / 0.5) 0%, transparent 16%, rgb(11 11 12 / 0.22) 36%, rgb(11 11 12 / 0.72) 56%, rgb(11 11 12 / 0.9) 76%, var(--preto) 100%);
+    linear-gradient(180deg, rgb(11 11 12 / 0.5) 0%, transparent 16%, transparent 40%, rgb(11 11 12 / 0.6) 60%, rgb(11 11 12 / 0.9) 80%, var(--preto) 100%);
 }
 .topo__sobretitulo { text-shadow: 0 1px 12px rgb(0 0 0 / 0.9); }
 .topo__texto { max-width: 640px; }
@@ -324,6 +324,16 @@ html.js .topo__texto.visivel .topo__logo path {
 .topo__rolar span { width: 2px; height: 30px; background: linear-gradient(var(--laranja), transparent); animation: rolar 1.8s ease-in-out infinite; }
 @keyframes rolar { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
 
+/* celular (07/11/2026, pedido do Humberto): a logo entra grande, se desenha e depois encolhe para o canto de baixo,
+   abrindo a tela para o vídeo de fundo. Encolhe pela largura (o bloco está alinhado embaixo, então o sobretítulo
+   desce junto e o espaço de cima fica todo para o vídeo). */
+@media (max-width: 899px) {
+  html.js .topo__texto.visivel .topo__logo { animation: logo-encolhe 0.9s var(--suave) 2.6s forwards; }
+  @keyframes logo-encolhe { to { width: min(52vw, 300px); } }
+  @media (prefers-reduced-motion: reduce) {
+    html.js .topo__texto .topo__logo { animation: none; width: min(52vw, 300px); }
+  }
+}
 @media (min-width: 600px) {
   .topo__acoes .botao { flex: 0 0 auto; }
 }
