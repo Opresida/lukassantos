@@ -12,7 +12,7 @@
       ]
     },
     {
-      "source": "/(marca|fotos)/(.*)",
+      "source": "/(marca|fotos|video)/(.*)",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }]
     }
   ]

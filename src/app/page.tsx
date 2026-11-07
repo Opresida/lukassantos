@@ -5,6 +5,7 @@ import { IconeDisco, IconeDownload, IconeEmail, IconeInstagram, IconeSeta, Icone
 import { Logo } from '@/components/Logo';
 import { Revela } from '@/components/Revela';
 import { Videos } from '@/components/Videos';
+import { VideoTopo } from '@/components/VideoTopo';
 import { BANDA, BRASIL, ESTRADA, EVENTOS, FORMATOS, GALERIA, IMPRENSA, INTERIOR, LANCAMENTO, MANAUS, NUMEROS, RIDER, VIDEOS } from '@/data/conteudo';
 import { DEEZER_URL, EMAIL, INSTAGRAM_URL, REEL_URL, SPOTIFY_URL, TELEFONE, WHATSAPP, YOUTUBE_MUSIC_URL, YOUTUBE_URL } from '@/lib/site';
 
@@ -21,6 +22,7 @@ function Topo() {
         {/* eslint-disable-next-line jsx-a11y/alt-text -- o alt vem de `resto` */}
         <img {...resto} />
       </picture>
+      <VideoTopo />
       <div className="topo__veu" aria-hidden="true" />
       <div className="topo__conteudo conteudo">
         <Revela aguardaAbertura className="topo__texto">
