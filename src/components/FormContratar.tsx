@@ -47,6 +47,7 @@ export function FormContratar() {
     }
     setErro('');
     const data = String(f.get('data') ?? '');
+    const horario = String(f.get('horario') ?? '').trim();
     const linhas = [
       'Olá! Vim pelo site e quero um orçamento de show do Lukas Santos.',
       '',
@@ -54,6 +55,7 @@ export function FormContratar() {
       `Evento: ${f.get('evento') || 'a combinar'}`,
       `Cidade: ${String(f.get('cidade') ?? '').trim() || 'a combinar'}`,
       `Data: ${semData || !data ? 'ainda não definida' : dataBr(data)}`,
+      `Horário: ${horario || 'a combinar'}`,
       `Formato: ${f.get('formato') || NAO_SEI}`,
     ];
     const extra = String(f.get('detalhes') ?? '').trim();
@@ -91,6 +93,10 @@ export function FormContratar() {
           </label>
         </div>
         <label className="campo">
+          <span className="campo__rotulo">Horário do show</span>
+          <input name="horario" type="time" />
+        </label>
+        <label className="campo">
           <span className="campo__rotulo">Formato do show</span>
           <select name="formato" value={formato} onChange={(e) => setFormato(e.target.value)}>
             <option value="">{NAO_SEI}</option>
@@ -99,7 +105,7 @@ export function FormContratar() {
         </label>
         <label className="campo campo--largo">
           <span className="campo__rotulo">Algo mais? <span className="campo__opcional">(opcional)</span></span>
-          <textarea name="detalhes" rows={3} placeholder="Horário, local, número de convidados, música especial…" />
+          <textarea name="detalhes" rows={3} placeholder="Local, número de convidados, música especial…" />
         </label>
       </div>
       {erro && <p id={`${id}-erro`} className="form__erro" role="alert">{erro}</p>}
